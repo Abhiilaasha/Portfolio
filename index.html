@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title> Portfolio</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css" >
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo.png" class="logo" alt="">
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                   
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>WEB DEVELOPER</p>
+                <h1> Hi ,I'm <span>Abhilaasha</span> </h1>
+                
+            </div>
+        </div>
+    </div>
+    <!-----------------------------about------------------------------>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                </div>
+                <div class="about-col-2"> 
+                    <h1  class="sub-title"> ABOUT ME</h1>
+                    <p> Web Developer
+                        Committed to excellence and driven to bring creativity and technical expertise to every project</p>
+                       
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')"> Experience</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Frontend Development</span><br>HTML/CSS: Proficient in creating semantically structured HTML and styling with CSS.<br>
+
+                                    JavaScript: Experienced in modern ES6+ JavaScript for dynamic web applications.<br>
+                                    
+                                    Responsive Design: Skilled in designing and developing responsive web interfaces for various screen sizes.<br>
+                                    CSS Preprocessors: Expertise in using CSS preprocessors like SASS or LESS.<br>
+
+                                    Version Control: Proficient in using Git and GitHub for version control and collaboration.<br>
+                                    Web Performance Optimization: Able to optimize website performance through techniques like lazy loading and minimizing HTTP requests.  </li>
+
+                                    <li><span> Backend Development</span><br>Server-Side Scripting: Proficient in server-side scripting languages such as Node.js. <br>
+                                        Server Frameworks: Knowledge of backend frameworks like Express.js (Node.js), Django <br>
+                                        Database Management: Working with various databases, including SQL (MySQL) and NoSQL (MongoDB).<br>
+                                        Server Deployment: Familiar with deploying web applications to cloud platforms like AWS/Azure</li>
+                                        <li><span>Database Management</span><br> Database Systems: SQL and NoSQL database systems, including MySQL and MongoDB <br>
+                                            Database Design: Experience in designing efficient database schemas and optimizing queries.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>Web development Intern</span> At Intern Pe September (2023)</li>
+                                <li><span>Web development Intern</span> At Bharat Intern October(2023)</li>
+                            </ul>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------Portfolio--------------------------->
+<div id="portfolio">
+    <div class="container"> 
+        <h1 class= "sub-title">My Work </h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="./images/website.png">
+                <div class="layer">
+                    <h3> Online Shopping App</h3>
+                    <p> An e-commerce website using html,css and javascript</p>
+                    <a href="#"><i class="fa-solid fa-link" style="color: #10100f;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/dino.png">
+                <div class="layer">
+                    <h3> Puppy Store</h3>
+                    <p> Statis website for dog lovers.</p>
+                    <a href="#"><i class="fa-solid fa-link" style="color: #10100f;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/todo.png">
+                <div class="layer">
+                    <h3> To Do List</h3>
+                    <a href="#"><i class="fa-solid fa-link" style="color: #10100f;"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-----------------------------contact-------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact Me </h1>
+                <p><i class="fa-solid fa-envelope"></i> contact@sinhaabhi0402@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/abhilaasha19/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Abhiilaasha"><i class="fa-brands fa-github"></i></a>
+
+                </div>
+                <a href="./images/Resume.pdf" download class="btn btn2"> Resume </a>
+            </div>
+            <div class="contact-right"></div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (var i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active-link");
+        }
+        for (var i = 0; i < tabcontents.length; i++) {
+            tabcontents[i].classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<footer>
+    <p> © 2023 ☮</p>
+</footer>
+   
+</body>
+</html>
